@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script defer src="scriptofc.js"></script>
+    <title>Fluxo de Decisão</title>
+  </head>
+  <body>
+    <div class="container">
+      <section id="inicio">
+        <label for="nome">Digite seu nome:</label>
+        <input type="text" name="nome" id="inpnome" />
+        <button onclick="iniciar()">Iniciar</button>
+      </section>
+
+      <section id="sectionarea">
+        <label for="area" id="area"></label>
+        <div>
+          <input type="radio" name="area" value="frontend" id="inpfront" />
+          <label for="frontend" class="opções">Front-End</label>
+          <input type="radio" name="area" value="backend" id="inpback" />
+          <label for="backend" class="opções">Back-End</label>
+        </div>
+        <button onclick="enviar()">Enviar</button>
+      </section>
+
+      <section id="casefrontend">
+        <label for="casefrontend">Qual tecnologia você quer aprender?</label>
+        <div>
+          <input type="radio" name="casefrontend" value="react" id="react" />
+          <label for="casefrontend" class="opções">React</label>
+          <input type="radio" name="casefrontend" value="Vue" id="Vue" />
+          <label for="casefrontend" class="opções">Vue</label>
+        </div>
+        <button onclick="enviar2()">Enviar</button>
+      </section>
+
+      <section id="casebackend">
+        <label for="casebackend">Qual tecnologia você quer aprender?</label>
+        <div>
+          <input type="radio" name="casebackend" value="c#" id="c#" />
+          <label for="casebackend" class="opções">C#</label>
+          <input type="radio" name="casebackend" value="Java" id="Java" />
+          <label for="casebackend" class="opções">Javaa</label>
+        </div>
+        <button onclick="enviar2()">Enviar</button>
+      </section>
+      <section id="especializaroufullstack">
+        <label for="especializaroufullstack"
+          >Digite 1 caso pretenda se especializar nessa área ou 2 para seguir se
+          desenvolvendo para se tornar Fullstack</label
+        >
+        <input
+          type="text"
+          name="especializaroufullstack"
+          id="inp_especializaroufullstack"
+        />
+        <button id="enviar3" onclick="enviar3()">Enviar</button>
+
+        <p id="p1"></p>
+        <p id="p2"></p>
+
+        <button id="prosseguir" onclick="prosseguir()">Prosseguir</button>
+      </section>
+
+      <section
+        id="tecnologiasparaespecializar"
+        onclick="tecnologiasparaespecializar()"
+      ></section>
+
+      <section id="fim" >
+        <P> Muito bem, você Chegou ao fim, Foi muito bom conhecer um pouco mais sobre você.</P>
+        <p>Continue estudando e lembre-se: </p>
+        <blockquote>
+            "Um profissional é uma pessoa que consegue dar o melhor de si em um momento no qual ele não se sente particularmente assim." 
+            <footer>-Alistair Cooke</footer>   
+        </blockquote>
+        </p>
+      </section>
+
+    </div>
+  </body>
+</html>
