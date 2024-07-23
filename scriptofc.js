@@ -76,14 +76,16 @@ function prosseguir() {
   let pergunta = prompt(
     "Tem outra tecnologia que pretende se especializar? (digite 1 para sim e 2 para não)"
   );
+
+  if (pergunta !== "1") {
+    let fim = document.getElementById("fim");
+    fim.style.display = "flex";
+  }
+
   while (pergunta === "1") {
     let tecnologia = prompt("Legal! Digite Aqui...");
     pergunta = prompt(
       "Tem mais alguma tecnologia que deseja aprender? ('1 para sim e 2 para não)"
     );
-    if (pergunta !== "1") {
-      let fim = document.getElementById("fim");
-      fim.style.display = "flex";
-    }
   }
 }
